@@ -10,4 +10,7 @@ public abstract class Function {
 			answers[i++]=evaluate(value);
 		return answers;	
 	}
+	public double evalComposition (Function f, Function g, double value){
+		return f.evaluate(g.evaluate(value));
+	}
 }
